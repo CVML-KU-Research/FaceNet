@@ -5,6 +5,7 @@ Python 3.8+ and PyTorch (CUDA optional but recommended).
 Install deps (minimal): numpy, tqdm, torch, torchvision.
 
 2) Data layout
+
 Place images under class-labeled folders:
 
 ```<data_root>/
