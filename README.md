@@ -4,6 +4,9 @@
 Python 3.8+ and PyTorch (CUDA optional but recommended).
 Install deps (minimal): numpy, tqdm, torch, torchvision.
 
+2) Data layout
+Place images under class-labeled folders:
+
 ```<data_root>/
   <class_id_1>/ 
     img1.jpg
@@ -17,7 +20,7 @@ Install deps (minimal): numpy, tqdm, torch, torchvision.
     ...
 ```
 
-2) Start training
+3) Start training
 
 - `--model_name`: `mobilefacenet` | `ir_se`  
 - `--classifier_type`: `arcface` | `cosface` | `FC`  
@@ -27,14 +30,14 @@ Install deps (minimal): numpy, tqdm, torch, torchvision.
 - `--max_epoch`, `--optimizer (adamw | SGD)`  
 - `--save_plot` → save loss/acc plots
 
-- MobileFaceNet + ArcFace (last block fine‑tune):
+MobileFaceNet + ArcFace (last block fine‑tune):
   
 ```python .\fine_tune_main.py --root_dir .\data --model_name mobilefacenet --classifier_type arcface --phase last_block --optimizer adamw --save_plot```
 
-- MobileFaceNet + CosFace
+MobileFaceNet + CosFace
   
 ```python .\fine_tune_main.py --root_dir .\data --model_name mobilefacenet --classifier_type cosface --phase last_block --optimizer adamw --save_plot```
 
-3) Testing
+4) Testing
 ```python test_model.py --classifier_type combined ```
 
