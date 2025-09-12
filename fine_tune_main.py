@@ -381,7 +381,7 @@ if __name__ == "__main__":
     main()
 
 ## %%
-# python fine_tune_ArcFace_main2.py --save_plot --model_name mobilefacenet --classifier_type arcface --phase last_block --optimizer adamw
-# python fine_tune_ArcFace_main2.py --save_plot --model_name mobilefacenet --classifier_type cosface --phase last_block --optimizer adamw
-# python fine_tune_ArcFace_main2.py --save_plot --model_name mobilefacenet --classifier_type FC --phase last_block --optimizer adamw
-# python fine_tune_ArcFace_main2.py --save_plot --model_name ir_se --classifier_type arcface --phase last_block --optimizer adamw
+# python fine_tune_main.py --save_plot --model_name mobilefacenet --classifier_type arcface --phase last_block --optimizer adamw
+# python fine_tune_main.py --save_plot --model_name mobilefacenet --classifier_type cosface --phase last_block --optimizer adamw
+# python fine_tune_main.py --save_plot --model_name mobilefacenet --classifier_type FC --phase last_block --optimizer adamw
+# python fine_tune_main.py --save_plot --model_name ir_se --classifier_type arcface --phase last_block --optimizer adamw
