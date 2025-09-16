@@ -21,7 +21,7 @@ Place images under class-labeled folders:
     ...
 ```
 
-3) Start training
+3) Start fine-tuning with four face images
 
 - `--model_name`: `mobilefacenet` | `ir_se`  
 - `--classifier_type`: `arcface` | `cosface` | `FC`  
